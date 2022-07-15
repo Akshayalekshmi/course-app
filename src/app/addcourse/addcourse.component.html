@@ -1,1 +1,35 @@
-  
+<app-navbar></app-navbar>
+<div class="container">
+<div class="row">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="row g-3">
+            <form #addcourse="ngForm" (ngSubmit)="Addcourse()"> 
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <label for="" class="form-label">Course Title</label>
+                <input type="text" name="Title"class="form-control" [(ngModel)]="course.courseTitle">
+            </div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <label for="" class="form-label">Duration</label>
+                <input type="text" name="Duration"class="form-control"[(ngModel)]="course.courseDuration">
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">Description</label>
+                <textarea name="Description" id="" cols="30" rows="10" class="form-control"[(ngModel)]="course.courseDescription">
+
+                </textarea>
+            </div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <label for="" class="form-label">Venue</label>
+                <input type="text" name="Venue"class="form-control" [(ngModel)]="course.courseVenue"> </div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <label for="" class="form-label">Date</label>
+                <input type="date" name="Date" id="" class="form-control"[(ngModel)]="course.courseDate">
+            </div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <button class="btn btn-primary">Register</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
