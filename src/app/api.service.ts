@@ -8,9 +8,9 @@ export class ApiService {
 
   constructor(private http:HttpClient) {}
    viewCourse=()=>{
-    return this.http.get("https://mylinkurcodesapp.herokapp.com/getcourses")
+    return this.http.get("http://localhost:3000/viewcourse")
    }
    Addcourse=(course:any)=>{
-    return this.http.post<any>("https://mylinkurcodesapp.herokapp.com/addcourses",course)
+    return this.http.post<any>("http://localhost:3000/addcourse",course)
    }
 }
